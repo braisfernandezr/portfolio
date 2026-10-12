@@ -2,130 +2,361 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Brais Fernández | Backend & Cloud Engineer">
-  <!-- Section Hero -->
-  <section class="py-8 sm:py-16 flex flex-col items-start gap-4 sm:gap-6">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-mono">
-      <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
-      Ingeniero Informático
-    </div>
-
-    <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-100 leading-tight">
-      Desarrollo <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Backend</span> & Arquitecturas Cloud.
-    </h1>
-
-    <p class="text-base sm:text-lg text-slate-400 leading-relaxed max-w-2xl">
-      Especializado en sistemas distribuidos, arquitectura de microservicios, desarrollo backend y observabilidad.
+<Layout title="Brais Fernández Reyes — Portfolio">
+  <!-- Portada -->
+  <section id="inicio" class="mx-auto max-w-6xl px-5 pb-16 pt-16 sm:px-8 sm:pb-24 sm:pt-28">
+    <p class="mb-7 font-mono text-[10px] uppercase tracking-[0.2em] text-[#b77c79]">
+      Desarrollo de software · Infraestructura
     </p>
 
-    <div class="flex flex-col sm:flex-row w-full sm:w-auto gap-3 pt-2">
-      <a href="#proyectos" class="px-5 py-3 sm:py-2.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm transition-all text-center shadow-lg shadow-sky-500/20">
-        Ver Proyectos
-      </a>
-      <a href="#contacto" class="px-5 py-3 sm:py-2.5 rounded-lg border border-slate-700 hover:border-slate-500 text-slate-300 font-medium text-sm transition-all text-center">
-        Contactar
-      </a>
-    </div>
-  </section>
+    <h1 class="max-w-4xl font-serif text-5xl font-normal leading-[1.08] tracking-[-0.04em] text-[#f0e8dc] sm:text-7xl lg:text-8xl">
+      Brais Fernández Reyes
+    </h1>
 
-  <!-- Section Tech Stack -->
-  <section class="py-6 sm:py-8 border-y border-slate-800/60 my-6 sm:my-10">
-    <h2 class="text-xs font-mono uppercase tracking-wider text-slate-500 mb-4">Tecnologías & Herramientas</h2>
-    <div class="flex flex-wrap gap-2 text-xs font-mono">
-      {["Java / Spring Boot", "Python / Django", "MongoDB", "PostgreSQL", "MySQL", "AWS", "Docker", "Ansible", "Vagrant", "MinIO", "Prometheus / Grafana", "GitHub Actions", "HL7 FHIR / openEHR"].map((tech) => (
-        <span class="px-2.5 py-1.5 rounded-md bg-slate-900 border border-slate-800 text-slate-300">
-          {tech}
-        </span>
-      ))}
-    </div>
-  </section>
-
-  <!-- Section Experiencia y Educación -->
-  <section id="experiencia" class="py-8 sm:py-12 space-y-6">
-    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-200">Experiencia y Educación</h2>
-    
-    <div class="relative border-l border-slate-800 ml-3 space-y-8">
-      <!-- Experiencia Accenture -->
-      <div class="pl-6 relative">
-        <span class="absolute -left-[6.5px] top-1.5 w-3 h-3 rounded-full bg-sky-500 border-2 border-slate-950"></span>
-        <span class="text-xs font-mono text-sky-400">Mar. 2026 - Jul. 2026</span>
-        <h3 class="text-base sm:text-lg font-bold text-slate-100 mt-0.5">Software Engineer (Prácticas)</h3>
-        <p class="text-xs text-slate-400 font-mono">Accenture · La Coruña (Híbrido)</p>
-        <ul class="text-slate-400 text-xs sm:text-sm leading-relaxed mt-3 space-y-1.5 list-disc list-inside">
-          <li>Desarrollo de servicios backend y API REST con <strong>Java</strong> y <strong>Spring Boot</strong> bajo arquitectura de microservicios e integración de <strong>arquitectura hexagonal</strong>.</li>
-          <li>Persistencia y gestión de datos con <strong>MongoDB</strong> y seguridad mediante <strong>Bearer Tokens</strong>.</li>
-          <li>Pruebas de APIs con Postman, despliegue continuo con <strong>GitHub Actions</strong> y monitorización de logs en <strong>AWS CloudWatch</strong>.</li>
-          <li>Participación en proyectos del sector sanitario trabajando con estándares de interoperabilidad clínica (<strong>HL7 FHIR</strong> y <strong>openEHR</strong>) bajo metodología Agile.</li>
-        </ul>
-      </div>
-
-      <!-- Educación: MUEI -->
-      <div class="pl-6 relative">
-        <span class="absolute -left-[6.5px] top-1.5 w-3 h-3 rounded-full bg-sky-500/60 border-2 border-slate-950"></span>
-        <span class="text-xs font-mono text-sky-400">Actualmente</span>
-        <h3 class="text-base sm:text-lg font-bold text-slate-100 mt-0.5">Máster Universitario en Ingeniería Informática (MUEI)</h3>
-        <p class="text-xs text-slate-400 font-mono">Universidade da Coruña (UDC)</p>
-        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mt-2">
-          Especialización en arquitectura de software avanzada, sistemas distribuidos, computación en la nube y gestión de infraestructura.
+    <div class="mt-8 grid gap-8 md:grid-cols-[1fr_220px] md:items-end md:gap-16">
+      <div>
+        <p class="max-w-2xl text-base leading-8 text-[#bdb5a9] sm:text-lg">
+          Ingeniero informático por la UDC y estudiante del Máster en Ingeniería Informática.
+          He trabajado en desarrollo backend con Java y Spring Boot, y mi TFG se centró
+          en automatizar una infraestructura de almacenamiento y observabilidad.
         </p>
-      </div>
 
-      <!-- Educación: Grado -->
-      <div class="pl-6 relative">
-        <span class="absolute -left-[6.5px] top-1.5 w-3 h-3 rounded-full bg-slate-700 border-2 border-slate-950"></span>
-        <span class="text-xs font-mono text-slate-500">Graduación</span>
-        <h3 class="text-base sm:text-lg font-bold text-slate-100 mt-0.5">Grado en Ingeniería Informática</h3>
-        <p class="text-xs text-slate-400 font-mono">Universidade da Coruña (UDC)</p>
-        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mt-2">
-          Formación completa orientada al desarrollo backend, ingeniería del software, bases de datos y sistemas operativos.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Proyectos Destacados -->
-  <section id="proyectos" class="py-8 sm:py-12 space-y-6">
-    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-200">Proyectos Destacados</h2>
-    
-    <div class="grid grid-cols-1 gap-4 sm:gap-6">
-      <article class="p-5 sm:p-6 rounded-xl bg-slate-900/50 border border-slate-800/80 hover:border-slate-700 transition-all flex flex-col justify-between gap-4">
-        <div>
-          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-            <h3 class="text-base sm:text-lg font-bold text-slate-100">tfg-minio-lgtm</h3>
-            <span class="text-[10px] font-mono text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded border border-sky-500/20">Open Source</span>
-          </div>
-          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
-            Infraestructura de almacenamiento S3-compatible con MinIO y pila de observabilidad LGTM (Grafana, Loki, Mimir, Tempo) desplegada mediante automatización con Ansible y entornos virtualizados con Vagrant.
-          </p>
-        </div>
-        <div class="flex flex-wrap items-center justify-between gap-4 border-t border-slate-800/60 pt-3">
-          <div class="flex flex-wrap gap-2 text-[11px] font-mono text-slate-500">
-            <span>Ansible</span> • <span>Vagrant</span> • <span>Docker</span> • <span>MinIO</span> • <span>Grafana</span>
-          </div>
-          <a href="https://github.com/braisfernandezr/tfg-minio-lgtm" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-sky-400 hover:underline inline-flex items-center gap-1">
-            Ver código en GitHub &rarr;
+        <div class="mt-8 flex flex-wrap gap-x-7 gap-y-4 text-sm">
+          <a href="#experiencia" class="border-b border-[#8c4146] pb-1 text-[#eee7dc] hover:text-[#d3aaa5]">
+            Experiencia
           </a>
+          <a href="#proyectos" class="border-b border-[#8c4146] pb-1 text-[#eee7dc] hover:text-[#d3aaa5]">
+            Proyectos
+          </a>
+          <a
+            href="https://github.com/braisfernandezr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-[#bdb5a9] hover:text-[#eee7dc]"
+          >
+            GitHub ↗
+          </a>
+          <a
+            href="https://www.linkedin.com/in/brais-fern%C3%A1ndez-reyes-3263723b7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-[#bdb5a9] hover:text-[#eee7dc]"
+          >
+            LinkedIn ↗
+          </a>
+        </div>
+      </div>
+
+      <aside class="border-l border-[#51443e] pl-5">
+        <p class="font-mono text-[10px] uppercase tracking-[0.16em] text-[#8e877d]">
+          Áreas de interés
+        </p>
+        <ul class="mt-4 space-y-2 text-sm text-[#c9c0b4]">
+          <li>Backend</li>
+          <li>Linux e infraestructura</li>
+          <li>Automatización</li>
+          <li>Cloud</li>
+          <li>Observabilidad</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Experiencia profesional -->
+  <section id="experiencia" class="border-t border-[#45403a]">
+    <div class="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-[#b77c79]">
+            01 / Experiencia
+          </p>
+          <h2 class="mt-4 font-serif text-4xl font-normal tracking-tight text-[#f0e8dc] sm:text-5xl">
+            Experiencia profesional
+          </h2>
+        </div>
+        <p class="text-sm text-[#8e877d]">Desarrollo de software · 2026</p>
+      </div>
+
+      <article class="mt-10 border-y border-[#51443e] py-8 sm:py-10">
+        <div class="grid gap-6 md:grid-cols-[190px_1fr] md:gap-14">
+          <div>
+            <p class="font-serif text-2xl text-[#f0e8dc]">Accenture</p>
+            <p class="mt-2 text-sm text-[#b77c79]">Prácticas · Software Engineer</p>
+            <p class="mt-3 font-mono text-[10px] uppercase tracking-wide text-[#8e877d]">
+              A Coruña · Híbrido
+            </p>
+          </div>
+
+          <div>
+            <p class="max-w-2xl text-sm leading-7 text-[#bdb5a9]">
+              Desarrollo backend para una aplicación del ámbito sanitario, trabajando con
+              Java, Spring Boot y una arquitectura de microservicios.
+            </p>
+
+            <ul class="mt-6 space-y-4 text-sm leading-7 text-[#bdb5a9]">
+              <li class="border-l border-[#8c4146] pl-4">
+                Desarrollo de servicios y endpoints REST, aplicando arquitectura hexagonal
+                y autenticación entre servicios mediante Bearer Tokens.
+              </li>
+              <li class="border-l border-[#8c4146] pl-4">
+                Persistencia con MongoDB y pruebas de API con Postman.
+              </li>
+              <li class="border-l border-[#8c4146] pl-4">
+                Activación de despliegues mediante etiquetas Git y GitHub Actions,
+                y consulta de logs de ejecución en AWS CloudWatch.
+              </li>
+              <li class="border-l border-[#8c4146] pl-4">
+                Trabajo con estándares de interoperabilidad sanitaria HL7 FHIR y openEHR,
+                dentro de una metodología Agile.
+              </li>
+            </ul>
+
+            <div class="mt-7 flex flex-wrap gap-x-4 gap-y-2 font-mono text-[10px] uppercase tracking-wide text-[#a59b8e]">
+              <span>Java</span>
+              <span class="text-[#69464a]">/</span>
+              <span>Spring Boot</span>
+              <span class="text-[#69464a]">/</span>
+              <span>MongoDB</span>
+              <span class="text-[#69464a]">/</span>
+              <span>AWS</span>
+              <span class="text-[#69464a]">/</span>
+              <span>FHIR · openEHR</span>
+            </div>
+          </div>
         </div>
       </article>
     </div>
   </section>
 
-  <!-- Section Contacto -->
-  <section id="contacto" class="py-8 sm:py-12 border-t border-slate-800/60 space-y-6">
-    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-200">Contacto</h2>
-    <p class="text-slate-400 text-sm leading-relaxed max-w-xl">
-      Si quieres hablar sobre desarrollo backend, infraestructura cloud o posibles oportunidades, puedes contactarme a través de:
-    </p>
+  <!-- Proyectos -->
+  <section id="proyectos" class="border-t border-[#45403a]">
+    <div class="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-[#b77c79]">
+            02 / Proyectos
+          </p>
+          <h2 class="mt-4 font-serif text-4xl font-normal tracking-tight text-[#f0e8dc] sm:text-5xl">
+            Trabajo personal y académico
+          </h2>
+        </div>
+        <a
+          href="https://github.com/braisfernandezr"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm text-[#c9b5a6] hover:text-[#eee7dc]"
+        >
+          Más en GitHub ↗
+        </a>
+      </div>
 
-    <div class="flex flex-wrap gap-4 pt-2">
-      <a href="https://github.com/braisfernandezr" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-200 font-medium text-xs sm:text-sm transition-all flex items-center gap-2">
-        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-        GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/brais-fern%C3%A1ndez-reyes-3263723b7" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-200 font-medium text-xs sm:text-sm transition-all flex items-center gap-2">
-        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-        LinkedIn
-      </a>
+      <!-- TFG -->
+      <article class="mt-10 border-y border-[#51443e] py-8 sm:py-10">
+        <div class="grid gap-8 md:grid-cols-[1fr_220px] md:gap-14">
+          <div>
+            <div class="flex flex-wrap items-center gap-3">
+              <span class="font-mono text-[10px] uppercase tracking-[0.16em] text-[#b77c79]">
+                Trabajo de fin de grado
+              </span>
+              <span class="text-[#8e877d]">·</span>
+              <span class="font-mono text-[10px] text-[#a59b8e]">Matrícula de honor</span>
+            </div>
+
+            <h3 class="mt-5 max-w-2xl font-serif text-2xl font-normal leading-snug text-[#f0e8dc] sm:text-3xl">
+              Almacenamiento distribuido y observabilidad mediante infraestructura como código
+            </h3>
+
+            <p class="mt-5 max-w-2xl text-sm leading-7 text-[#bdb5a9]">
+              Despliegue automatizado de un entorno de almacenamiento de objetos compatible con S3
+              mediante MinIO, junto con una infraestructura de observabilidad basada en Grafana,
+              Loki, Mimir y Tempo. La configuración de las máquinas y los servicios se gestiona
+              con Vagrant, Ansible y Docker.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-x-4 gap-y-2 font-mono text-[10px] uppercase tracking-wide text-[#a59b8e]">
+              <span>MinIO</span>
+              <span class="text-[#69464a]">/</span>
+              <span>Ansible</span>
+              <span class="text-[#69464a]">/</span>
+              <span>Vagrant</span>
+              <span class="text-[#69464a]">/</span>
+              <span>Grafana LGTM</span>
+              <span class="text-[#69464a]">/</span>
+              <span>Docker</span>
+            </div>
+
+            <a
+              href="https://github.com/braisfernandezr/tfg-minio-lgtm"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-8 inline-flex items-center gap-2 border-b border-[#8c4146] pb-1 text-sm text-[#e2d4c2] hover:text-[#d3aaa5]"
+            >
+              Código fuente en GitHub ↗
+            </a>
+          </div>
+
+          <div class="relative hidden min-h-[240px] overflow-hidden border border-[#51443e] bg-[#1e1d1b] md:flex md:items-center md:justify-center">
+            <div class="absolute inset-4 border border-[#3f3934]"></div>
+
+            <div class="relative flex items-center gap-3">
+              <div class="flex h-14 w-14 items-center justify-center border border-[#8c4146] bg-[#352326] font-mono text-xs text-[#e2c6bb]">
+                S3
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <span class="h-px w-7 bg-[#8c4146]"></span>
+                <span class="h-px w-7 bg-[#8c4146]"></span>
+                <span class="h-px w-7 bg-[#8c4146]"></span>
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <span class="flex h-7 w-12 items-center justify-center border border-[#51443e] font-mono text-[9px] text-[#c6b9a5]">LOG</span>
+                <span class="flex h-7 w-12 items-center justify-center border border-[#51443e] font-mono text-[9px] text-[#c6b9a5]">MET</span>
+                <span class="flex h-7 w-12 items-center justify-center border border-[#51443e] font-mono text-[9px] text-[#c6b9a5]">TRACE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="border-t border-[#45403a]">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 py-16 sm:px-8 sm:py-20 md:grid-cols-[190px_1fr] md:gap-14">
+      <div>
+        <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-[#b77c79]">
+          03 / Sobre mí
+        </p>
+      </div>
+
+      <div class="max-w-3xl">
+        <h2 class="font-serif text-3xl font-normal leading-tight tracking-tight text-[#f0e8dc] sm:text-4xl">
+          Informática, cine, literatura y entrenamiento.
+        </h2>
+
+        <div class="mt-7 space-y-5 text-sm leading-7 text-[#bdb5a9]">
+          <p>
+            Estudié Ingeniería Informática en la UDC y ahora curso el máster. En tecnología
+            me interesan especialmente el backend y la infraestructura: desde diseñar una API
+            hasta automatizar el entorno donde se ejecuta.
+          </p>
+
+          <p>
+            También dedico bastante tiempo al cine y a la literatura. Me gustan las obras
+            que construyen una atmósfera propia, dejan espacio para interpretar lo que ocurre
+            y siguen dando vueltas en la cabeza cuando ya han terminado. El entrenamiento, 
+			por su parte, me ha enseñado a valorar la constancia, la paciencia y el progreso
+			a largo plazo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formación -->
+  <section id="formacion" class="border-t border-[#45403a]">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 py-16 sm:px-8 sm:py-20 md:grid-cols-[190px_1fr] md:gap-14">
+      <div>
+        <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-[#b77c79]">
+          04 / Formación
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        <article>
+          <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-[#8e877d]">
+            Actualmente
+          </p>
+          <h3 class="mt-2 font-serif text-xl font-normal text-[#f0e8dc]">
+            Máster Universitario en Ingeniería Informática
+          </h3>
+          <p class="mt-1 text-sm text-[#b77c79]">Universidade da Coruña</p>
+        </article>
+
+        <div class="h-px bg-[#393531]"></div>
+
+        <article>
+          <p class="font-mono text-[10px] uppercase tracking-[0.12em] text-[#8e877d]">
+            Finalizado
+          </p>
+          <h3 class="mt-2 font-serif text-xl font-normal text-[#f0e8dc]">
+            Grado en Ingeniería Informática
+          </h3>
+          <p class="mt-1 text-sm text-[#b77c79]">Universidade da Coruña</p>
+          <p class="mt-3 text-sm leading-6 text-[#9f978c]">
+            TFG calificado con matrícula de honor.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tecnologías -->
+  <section class="border-t border-[#45403a]">
+    <div class="mx-auto grid max-w-6xl gap-8 px-5 py-16 sm:px-8 sm:py-20 md:grid-cols-[190px_1fr] md:gap-14">
+      <div>
+        <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-[#b77c79]">
+          05 / Tecnologías
+        </p>
+      </div>
+
+      <div class="grid gap-8 sm:grid-cols-2">
+        <div>
+          <h3 class="font-serif text-xl text-[#e2d4c2]">Desarrollo</h3>
+          <p class="mt-3 text-sm leading-7 text-[#bdb5a9]">
+            Java, Spring Boot, Python, Django, API REST, microservicios,
+            arquitectura hexagonal, MongoDB, PostgreSQL y MySQL.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-serif text-xl text-[#e2d4c2]">Sistemas e infraestructura</h3>
+          <p class="mt-3 text-sm leading-7 text-[#bdb5a9]">
+            Linux, Docker, Ansible, Vagrant, MinIO, Grafana, Loki, Mimir,
+            Tempo, AWS y GitHub Actions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="border-t border-[#45403a]">
+    <div class="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
+      <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-[#b77c79]">
+        06 / Contacto
+      </p>
+
+      <div class="mt-6 grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
+        <div>
+          <h2 class="font-serif text-3xl font-normal tracking-tight text-[#f0e8dc] sm:text-4xl">
+            Brais Fernández Reyes
+          </h2>
+          <p class="mt-4 text-sm leading-7 text-[#bdb5a9]">
+            Puedes consultar mi código y mi trayectoria en estos perfiles.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-x-7 gap-y-4 text-sm">
+          <a
+            href="https://github.com/braisfernandezr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border-b border-[#8c4146] pb-1 text-[#e2d4c2] hover:text-[#d3aaa5]"
+          >
+            GitHub ↗
+          </a>
+          <a
+            href="https://www.linkedin.com/in/brais-fern%C3%A1ndez-reyes-3263723b7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border-b border-[#8c4146] pb-1 text-[#e2d4c2] hover:text-[#d3aaa5]"
+          >
+            LinkedIn ↗
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 </Layout>

@@ -6,9 +6,9 @@ interface Props {
   description?: string;
 }
 
-const { 
-  title, 
-  description = "Portfolio profesional de Desarrollo Backend, Cloud Infrastructure & DevOps." 
+const {
+  title,
+  description = 'Portfolio de Brais Fernández Reyes. Desarrollo backend, infraestructura y sistemas distribuidos.',
 } = Astro.props;
 ---
 
@@ -18,33 +18,40 @@ const {
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171716" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white min-h-screen flex flex-col">
-    <!-- Navbar Responsive -->
-    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
-      <nav class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <a href="#" class="font-bold text-base sm:text-lg tracking-tight hover:text-sky-400 transition-colors">
-          brais<span class="text-sky-500">.dev</span>
+
+  <body class="min-h-screen bg-[#171716] text-[#eee7dc] antialiased selection:bg-[#762f35] selection:text-[#fff8ef]">
+    <header class="border-b border-[#45403a]">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-5 sm:px-8">
+        <a
+          href="#inicio"
+          class="font-serif text-lg tracking-wide text-[#eee7dc] transition-colors hover:text-[#c9a7a0]"
+        >
+          Brais Fernández Reyes
         </a>
-        
-        <ul class="flex items-center gap-4 sm:gap-8 text-xs sm:text-sm text-slate-400 font-medium">
-          <li><a href="#experiencia" class="hover:text-slate-100 transition-colors">Experiencia</a></li>
-          <li><a href="#proyectos" class="hover:text-slate-100 transition-colors">Proyectos</a></li>
-          <li><a href="#contacto" class="hover:text-slate-100 transition-colors">Contacto</a></li>
-        </ul>
+
+        <div class="flex items-center gap-4 text-xs tracking-wide text-[#b7afa3] sm:gap-7 sm:text-sm">
+          <a href="#sobre-mi" class="transition-colors hover:text-[#eee7dc]">Sobre mí</a>
+          <a href="#trayectoria" class="hidden transition-colors hover:text-[#eee7dc] sm:inline">Trayectoria</a>
+          <a href="#proyectos" class="transition-colors hover:text-[#eee7dc]">Proyectos</a>
+          <a href="#contacto" class="transition-colors hover:text-[#eee7dc]">Contacto</a>
+        </div>
       </nav>
     </header>
 
-    <!-- Main Container Adaptable -->
-    <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16 w-full">
+    <main>
       <slot />
     </main>
 
-    <footer class="border-t border-slate-800/80 py-8 text-center text-xs text-slate-500 px-4">
-      <p>© {new Date().getFullYear()} Brais Fernández — Construido con Astro & Tailwind CSS</p>
+    <footer class="border-t border-[#45403a]">
+      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-7 text-xs text-[#8e877d] sm:flex-row sm:items-center sm:justify-between sm:px-8">
+        <p>© {new Date().getFullYear()} Brais Fernández Reyes</p>
+        <p class="font-mono tracking-wide">A CORUÑA · GALICIA</p>
+      </div>
     </footer>
   </body>
 </html>
